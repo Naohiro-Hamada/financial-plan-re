@@ -10,6 +10,7 @@ import { FamilyListComponent } from './family-list/family-list.component';
 import { FamilyService } from './family.service';
 import { FamilyDetailComponent } from './family-detail/family-detail.component';
 import { RelationshipPipe } from './relationship.pipe';
+import { FamilyUpdateComponent } from './family-update/family-update.component';
 
 @NgModule({
   imports: [
@@ -22,6 +23,7 @@ import { RelationshipPipe } from './relationship.pipe';
     FamilyInputComponent,
     FamilyListComponent,
     FamilyDetailComponent,
+    FamilyUpdateComponent,
     RelationshipPipe
   ],
   providers: [
