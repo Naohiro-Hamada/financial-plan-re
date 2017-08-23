@@ -9,6 +9,7 @@ import { FamilyListComponent } from './family-list/family-list.component';
 
 import { FamilyService } from './family.service';
 import { FamilyDetailComponent } from './family-detail/family-detail.component';
+import { RelationshipPipe } from './relationship.pipe';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { FamilyDetailComponent } from './family-detail/family-detail.component';
     FamilyComponent,
     FamilyInputComponent,
     FamilyListComponent,
-    FamilyDetailComponent
+    FamilyDetailComponent,
+    RelationshipPipe
   ],
   providers: [
     FamilyService

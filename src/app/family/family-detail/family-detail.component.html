@@ -1,3 +1,12 @@
-<p>
-  family-detail works!
-</p>
+
+<div [hidden]="myVar" (click)="onClick()">
+  <span class="name">{{name}}</span>
+  <span class="relationship">{{relationship | relationshipValue}}</span>
+  <span class="birthday">{{birthday | date:'yMd'}}</span>
+</div>
+<!-- <fp-family-update [hidden]="!myVar"
+  [rownum]='rownum'
+  [name]='name'
+  [relationship]='relationship'
+  [birthday]='birthday'
+></fp-family-update> -->

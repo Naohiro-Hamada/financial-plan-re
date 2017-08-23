@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'fp-family-detail',
@@ -7,9 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FamilyDetailComponent implements OnInit {
 
+  @Input()
+  name: string;
+
+  @Input()
+  relationship: string;
+
+  @Input()
+  birthday: Date;
+
+  @Input()
+  rownum: number;
+
+  myVar: boolean;
+
   constructor() { }
 
   ngOnInit() {
+    this.myVar = false;
+  }
+
+  onClick() {
+    this.myVar = true;
   }
 
 }
