@@ -1,9 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
-import { Human } from '../human';
-import { FamilyService } from '../family.service';
-import { Relationship } from '../relationship';
+import { Human } from '../../shared/service/family/human';
+import { FamilyService } from '../../shared/service/family/family.service';
+import { Relationship } from '../../shared/service/family/relationship';
 
 @Component({
   selector: 'fp-family-update',

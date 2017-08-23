@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
-import { FamilyService } from '../family.service';
+import { FamilyService } from '../../shared/service/family/family.service';
 
-import { Human } from '../human';
-import { Relationship } from '../relationship';
+import { Human } from '../../shared/service/family/human';
+import { Relationship } from '../../shared/service/family/relationship';
 
 @Component({
   selector: 'fp-family-input',

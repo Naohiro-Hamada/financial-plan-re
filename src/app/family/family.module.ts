@@ -8,10 +8,7 @@ import { SharedModule } from '../shared/shared.module';
 import { FamilyComponent } from './family.component';
 import { FamilyInputComponent } from './family-input/family-input.component';
 import { FamilyListComponent } from './family-list/family-list.component';
-
-import { FamilyService } from './family.service';
 import { FamilyDetailComponent } from './family-detail/family-detail.component';
-import { RelationshipPipe } from './relationship.pipe';
 import { FamilyUpdateComponent } from './family-update/family-update.component';
 
 @NgModule({
@@ -27,10 +24,6 @@ import { FamilyUpdateComponent } from './family-update/family-update.component';
     FamilyListComponent,
     FamilyDetailComponent,
     FamilyUpdateComponent,
-    RelationshipPipe
-  ],
-  providers: [
-    FamilyService
   ]
 })
 export class FamilyModule { }

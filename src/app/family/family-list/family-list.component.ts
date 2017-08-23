@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { FamilyService } from '../family.service';
+import { FamilyService } from '../../shared/service/family/family.service';
 
-import { Human } from '../human';
+import { Human } from '../../shared/service/family/human';
 
 @Component({
   selector: 'fp-family-list',

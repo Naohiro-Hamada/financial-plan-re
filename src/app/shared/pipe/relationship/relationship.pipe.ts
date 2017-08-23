@@ -1,6 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
-import { Relationship } from './relationship';
+import { Relationship } from '../../service/family/relationship';
 
 @Pipe({
   name: 'relationshipValue'
