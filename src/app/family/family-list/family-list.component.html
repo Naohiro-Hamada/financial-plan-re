@@ -1,12 +1,8 @@
 <div *ngFor="let human of family; let i = index">
-  <!-- <fp-family-detail
+  <fp-family-detail
     [rownum]="i"
     [name]="human.name"
     [relationship]="human.relationship"
     [birthday]="human.birthday">
-  </fp-family-detail> -->
-  <fp-family-detail></fp-family-detail>
-  <span>{{human.name}}</span>
-  <span>{{human.relationship}}</span>
-  <span>{{human.birthday}}</span>
+  </fp-family-detail>
 </div>

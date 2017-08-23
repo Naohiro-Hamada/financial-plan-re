@@ -4,6 +4,7 @@
   <span class="relationship">{{relationship | relationshipValue}}</span>
   <span class="birthday">{{birthday | date:'yMd'}}</span>
 </div>
+<div [hidden]="!myVar">fp-family-update</div>
 <!-- <fp-family-update [hidden]="!myVar"
   [rownum]='rownum'
   [name]='name'
