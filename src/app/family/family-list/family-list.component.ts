@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+import { FamilyService } from '../family.service';
+
+import { Human } from '../human';
+
 @Component({
   selector: 'fp-family-list',
   templateUrl: './family-list.component.html',
@@ -7,9 +11,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FamilyListComponent implements OnInit {
 
-  constructor() { }
+    family: Human[];
 
-  ngOnInit() {
+    constructor(private familyService: FamilyService) { }
+
+    ngOnInit() {
+      this.family = this.familyService.list;
+    }
+
   }
 
-}
