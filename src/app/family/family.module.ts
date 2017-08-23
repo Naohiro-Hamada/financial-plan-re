@@ -8,6 +8,7 @@ import { FamilyInputComponent } from './family-input/family-input.component';
 import { FamilyListComponent } from './family-list/family-list.component';
 
 import { FamilyService } from './family.service';
+import { FamilyDetailComponent } from './family-detail/family-detail.component';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { FamilyService } from './family.service';
   declarations: [
     FamilyComponent,
     FamilyInputComponent,
-    FamilyListComponent
+    FamilyListComponent,
+    FamilyDetailComponent
   ],
   providers: [
     FamilyService
