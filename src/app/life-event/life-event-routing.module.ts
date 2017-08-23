@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LifeEventComponent } from './life-event.component';
 
 const routes: Routes = [
-  { path: '', component: LifeEventComponent, pathMatch: 'full' }
+  { path: '', component: LifeEventComponent }
 ];
 
 @NgModule({

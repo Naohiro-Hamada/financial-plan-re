@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { CashFlowComponent } from './cash-flow.component';
 
 const routes: Routes = [
-  { path: '', component: CashFlowComponent, pathMatch: 'full' }
+  { path: '', component: CashFlowComponent }
 ];
 
 @NgModule({

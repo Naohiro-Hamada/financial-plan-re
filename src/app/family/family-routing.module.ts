@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { FamilyComponent } from './family.component';
 
 const routes: Routes = [
-  { path: '', component: FamilyComponent, pathMatch: 'full' }
+  { path: '', component: FamilyComponent }
 ];
 
 @NgModule({

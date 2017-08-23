@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { BalanceSheetComponent } from './balance-sheet.component';
 
 const routes: Routes = [
-  { path: '', component: BalanceSheetComponent, pathMatch: 'full' }
+  { path: '', component: BalanceSheetComponent }
 ];
 
 @NgModule({
