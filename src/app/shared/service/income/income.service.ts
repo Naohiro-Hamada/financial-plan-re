@@ -10,7 +10,7 @@ export class IncomeService {
 
   get totalAfterTaxIncome(): number {
     return this.husband.afterTaxIncome + this.wife.afterTaxIncome;
-  };
+  }
 
   constructor() {
     this.husband = new Income(0, 0, 0, 0);
