@@ -8,15 +8,21 @@ export class FamilyService {
   family: Human[];
 
   constructor() {
-    this.family = [];
+    const family = localStorage.getItem('family');
+    this.family = family ? JSON.parse(family) : [];
+    this.family.forEach(value => {
+      value.birthday = new Date(value.birthday);
+    });
   }
 
   add(human: Human): void {
     this.family.push(human);
+    localStorage.setItem('family', JSON.stringify(this.family));
   }
 
   update(rownum: number, human: Human): void {
     this.family[rownum] = human;
+    localStorage.setItem('family', JSON.stringify(this.family));
   }
 
   get list(): Human[] {

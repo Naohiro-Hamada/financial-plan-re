@@ -1,3 +1,7 @@
-<p>
-  life-event works!
-</p>
+<fp-page-header
+[title]="'今後のライフイベントとかかる費用'"
+[desc]="'今から20年先までの自分と家族の暮らしをイメージしながら、先々のライフイベントとかかる費用を書き出してみましょう'"
+></fp-page-header>
+
+<fp-life-event-input [family]="family"></fp-life-event-input>
+<fp-life-event-list [family]="family" [events]="lifeEvents"></fp-life-event-list>
